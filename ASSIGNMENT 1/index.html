@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak-Austria Fachhochschule | Applied Sciences & Technology</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- New EmailJS SDK v4 (latest browser distribution) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="./assets/logo.png" alt="PAF-IAST" class="logo-img">
+            <span class="logo-text">PAF-IAST</span>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#stats">Statistics</a>
+            <a href="#campus">Campus</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(120deg, rgba(11,31,51,0.85), rgba(18,60,90,0.85)), url('./assets/heroreal.jpg') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Pak-Austria Fachhochschule</h1>
+            <p>Institute of Applied Sciences & Technology</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="about" class="section reveal">
+        <h2>About the Institute</h2>
+        <p>
+            Pak-Austria Fachhochschule Institute of Applied Sciences and Technology (PAF-IAST) is a federally chartered public university delivering European-style applied sciences education in Pakistan.
+        </p>
+    </section>
+
+    <section id="programs" class="section dark reveal">
+        <h2>Academic Programs</h2>
+        <div class="cards">
+            <div class="card">Computer Science</div>
+            <div class="card">Artificial Intelligence</div>
+            <div class="card">Mechanical Engineering</div>
+            <div class="card">Electrical Engineering</div>
+        </div>
+    </section>
+
+    <section id="stats" class="section stats reveal">
+        <div class="stat-box">
+            <h3 class="counter" data-target="4500">0</h3>
+            <p>Students</p>
+        </div>
+        <div class="stat-box">
+            <h3 class="counter" data-target="20">0</h3>
+            <p>Degree Programs</p>
+        </div>
+        <div class="stat-box">
+            <h3 class="counter" data-target="30">0</h3>
+            <p>Advanced Labs</p>
+        </div>
+    </section>
+
+    <section id="campus" class="section reveal">
+        <h2>Campus & Facilities</h2>
+        <div class="cards">
+            <div class="card"><img src="./assets/img1.png" alt="Campus Image"></div>
+            <div class="card"><img src="./assets/img2.jpg" alt="Laboratory"></div>
+            <div class="card"><img src="./assets/img3.jpg" alt="Academic Block"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="section dark reveal">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="title" placeholder="Subject" required>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="form-status"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Pak-Austria Fachhochschule Institute of Applied Sciences & Technology</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
